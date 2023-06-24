@@ -1,0 +1,257 @@
+#p-n-bar-top {
+    padding: 18px 8% 20px;
+    margin: 32px 0 0;
+    border-top: 1px solid #f7f7f7
+}
+
+#p-n-bar-top-container {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+#p-n-bar-top-inner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#p-n-bar-top-inner.a {
+    display: inline-block;
+}
+
+a.p-n-bar-top-item-a:hover {
+    opacity: 0.5;
+
+}
+
+#p-n-bar-top-prev {
+    width: calc(50% - 50px);
+}
+
+#p-n-bar-top-next {
+    text-align: right;
+    width: calc(50% - 50px);
+}
+
+.p-n-bar-top-item-a {
+    font-size: 1.2rem;
+    letter-spacing: .02em;
+    color: #7369ff;
+}
+
+.p-n-bar-top-item-a {
+    position: relative;
+    display: inline-block;
+}
+
+.p-n-bar-top-item-a:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7369ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.p-n-bar-top-item-a._prev:before {
+    border-top: 0;
+    border-right: 0;
+    right: auto;
+}
+
+.p-n-bar-top-item-a._next:before {
+    border-bottom: 0;
+    border-left: 0;
+    left: auto;
+}
+
+.p-n-bar-top-item-a._prev {
+    padding: 0 0 0 13px;
+}
+
+.p-n-bar-top-item-a._next {
+    padding: 0 13px 0 0;
+}
+
+#blog-main {
+    width: 100%;
+}
+
+#blog-info {
+    width: 100%;
+    padding: 30px 8% 36px;
+    background-color: #f7f7f7;
+}
+
+#blog-info-inner {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+#blog-info-data {
+    width: 100%;
+}
+
+#blog-info-title {
+    font-size: 1.6rem;
+    letter-spacing: .08em;
+    line-height: 1.71875;
+    color: #9e3eb2;
+}
+
+#blog-info-sub {
+    width: 100%;
+    margin: 18px 0 0;
+}
+
+#blog-info-sub-date {
+    font-size: 1rem;
+    letter-spacing: .08em;
+    color: #6e6e7e;
+}
+
+#blog-content {
+    width: 100%;
+    padding: 55px 8% 50px;
+}
+
+#blog-content-inner {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+#blog-content-edit {
+    width: 100%;
+    font-size: 1.3rem;
+    color: #46464B;
+    letter-spacing: .08em;
+    line-height: 1.80769;
+}
+
+#blog-content-edit div {
+    margin: 51px 0;
+}
+
+#blog-content-edit div:first-child {
+    margin: 0;
+}
+
+#blog-content-edit img {
+    margin: 33px 0 0;
+}
+
+#blog-content-edit img:first-child {
+    margin: 0;
+}
+
+#blog-content-bottom {
+    width: 100%;
+    margin: 78px 0 0;
+}
+
+#p-n-bar-bottom-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.p-n-bar-bottom-item-p {
+    /* font-size: 1.15rem; */
+    letter-spacing: .08em;
+    color: #7369ff;
+    line-height: 1.30435;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+#p-n-bar-bottom-prev {
+    width: calc(50% - 50px);
+    max-height: 30px;
+}
+
+#p-n-bar-bottom-next {
+    width: calc(50% - 50px);
+    max-height: 30px;
+        text-align: right;
+}
+
+@media screen and (min-width: 800px) {
+    .p-n-bar-top-item-a {
+        font-size: 1.4rem;
+    }
+
+    .p-n-bar-bottom-item-p {
+        font-size: 1.4rem;
+    }
+
+    #blog-info {
+        padding: 49px 8.33333% 63px;
+    }
+
+    #blog-content-edit {
+        font-size: 1.7rem;
+        letter-spacing: .08em;
+        line-height: 1.58824;
+    }
+
+    #blog-content-edit div {
+        margin: 54px 0;
+    }
+
+    #blog-content-edit img {
+        margin: 55px 0 0;
+    }
+
+    #blog-info-title {
+        font-size: 2.4rem;
+        line-height: 1.66667;
+    }
+
+    #blog-info-sub-date {
+        font-size: 1.2rem;
+    }
+}

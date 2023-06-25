@@ -1,0 +1,62 @@
+#go-top-button-container {
+    visibility: visible;
+    position: fixed;
+    right: 4.5%;
+    bottom: 24px;
+    z-index: 30;
+    /* pointer-events: none; */
+    -webkit-transition: opacity 0.5s cubic-bezier(0.4, 0.4, 0.1, 1);
+    -o-transition: opacity 0.5s cubic-bezier(0.4, 0.4, 0.1, 1);
+    transition: opacity 0.5s cubic-bezier(0.4, 0.4, 0.1, 1);
+}
+
+#go-top-button-inner {
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #9e3eb2;
+    border: 1px solid #9e3eb2;
+    cursor: pointer;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 7.315px 2.18px rgba(158,62,178,0.2);
+    box-shadow: 0px 0px 7.315px 2.18px rgba(158,62,178,0.2);
+}
+
+#go-top-button-icon {
+    display: block;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@media screen and (min-width: 800px) {
+    #go-top-button-container {
+        right: 2.77778%;
+        bottom: 35px;
+    }
+
+    #go-top-button-inner {
+        width: 48px;
+        height: 48px;
+        -webkit-box-shadow: 0px 0px 14.63px 4.37px rgba(158,62,178,0.2);
+        box-shadow: 0px 0px 14.63px 4.37px rgba(158,62,178,0.2);
+    }
+
+    #go-top-button-icon {
+        width: 14px;
+        height: 14px;
+        top: 7px;
+    }
+}

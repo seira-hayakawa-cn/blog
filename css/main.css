@@ -42,6 +42,8 @@ html {
 
 a {
     color: #46464b;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 a:visited {

@@ -156,7 +156,7 @@ a.p-n-bar-top-item-a:hover {
 }
 
 #blog-content-edit div {
-    margin: 51px 0;
+    margin: 51px 0 0;
 }
 
 #blog-content-edit div:first-child {
@@ -239,7 +239,7 @@ a.p-n-bar-top-item-a:hover {
     }
 
     #blog-content-edit div {
-        margin: 54px 0;
+        margin: 54px 0 0;
     }
 
     #blog-content-edit img {

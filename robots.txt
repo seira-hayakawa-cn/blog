@@ -1,1 +1,3 @@
+User-agent: *
+
 Sitemap: https://seira-hayakawa-cn.github.io/blog/sitemap.xml

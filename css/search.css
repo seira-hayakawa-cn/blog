@@ -1,0 +1,109 @@
+#search-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    background: rgba(0,0,0,.6)
+}
+
+#search-dialog {
+    position: fixed;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    width: 60rem;
+    max-height: calc(100vh - 20rem);
+    overflow: hidden;
+    background: #fff
+}
+
+.search-dialog-title {
+    padding: 0 0 1.8rem;
+    color: #9e3eb2;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+#search-dialog span.search-close-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #888888;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+#search-dialog .local-search-box {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+#search-dialog .local-search-box input {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    outline: 0;
+    border: 2px solid #9e3eb2;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+#search-result-list {
+    margin: 2rem 0 0 0;
+    overflow-y: auto;
+    max-height: calc(100vh - 20rem - 135px);
+}
+
+.search-result-item {
+    display: block;
+    padding: 1rem;
+}
+
+.search-result-item:hover {
+    background-color: #eeefff;
+}
+
+.search-result-item-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #9e3eb2;
+}
+
+.search-result-item-content {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    #search-dialog {
+        top: 6rem;
+        width: 90%;
+        max-height: calc(100vh - 12rem);
+    }
+
+    #search-result-list {
+        margin: 2rem 0 0 0;
+        overflow-y: auto;
+        max-height: calc(100vh - 12rem - 135px);
+    }
+
+    .search-result-item-title {
+        font-size: 16px;
+    }
+    
+    .search-result-item-content {
+        font-size: 13px;
+    }
+}

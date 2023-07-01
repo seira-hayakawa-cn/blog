@@ -219,7 +219,7 @@ a.p-n-bar-top-item-a:hover {
         text-align: right;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .p-n-bar-top-item-a {
         font-size: 1.4rem;
     }

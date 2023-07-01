@@ -28,18 +28,23 @@
 <link rel="stylesheet" href="/blog/css/top_button.css">
 
   
+<link rel="stylesheet" href="/blog/css/search.css">
+
+  
 <link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css">
 
+
+  
   
 <script src="/blog/lib/jquery-3.6.3.min.js"></script>
 
+  <script type="text/javascript">
+    var GLOBAL_CONFIG = {
+      root: '/blog/',
+      search_path: '/blog/search.xml'
+    };
+  </script>
   
-<script src="/blog/js/util.js"></script>
-
-  
-<script src="/blog/js/scroll.js"></script>
-
-
 <meta name="generator" content="Hexo 6.3.0"></head>
 <body>
   <nav>
@@ -64,7 +69,6 @@
   <div id="navbar-deco"></div>
 </div>
   </nav>
-
   <main>
     <div id="header-container">
   <div id="header-inner">
@@ -85,6 +89,27 @@
 <div id="post-list-container">
   <div id="post-list-main">
     <div id="post-list">
+      
+        <a class="post-card" href="/blog/post/56569/">
+          <div class="post-card-fig">
+            <div class="post-card-img">
+              
+                <img class="post-card-bg is-l" src="/blog/image/56569_01.jpeg"></img>
+              
+              <!-- <div class="post-card-bg is-l" style="background-image: url(/image/none.png);"></div> -->
+            </div>
+          </div>
+          <div class="post-card-info">
+            <p class="post-card-info-title">
+              はじめての　#乃木坂46時間TV ありがとうございました！
+            </p>
+            <div class="post-card-info-sub">
+              <p class="post-card-info-sub-date">
+                2020.06.22 20:24
+              </p>
+            </div>
+          </div>
+        </a>
       
         <a class="post-card" href="/blog/post/56472/">
           <div class="post-card-fig">
@@ -275,27 +300,6 @@
           </div>
         </a>
       
-        <a class="post-card" href="/blog/post/55593/">
-          <div class="post-card-fig">
-            <div class="post-card-img">
-              
-                <img class="post-card-bg is-l" src="/blog/image/55593_01.jpeg"></img>
-              
-              <!-- <div class="post-card-bg is-l" style="background-image: url(/image/none.png);"></div> -->
-            </div>
-          </div>
-          <div class="post-card-info">
-            <p class="post-card-info-title">
-              だいすきなのに　　早川聖来
-            </p>
-            <div class="post-card-info-sub">
-              <p class="post-card-info-sub-date">
-                2020.03.30 22:00
-              </p>
-            </div>
-          </div>
-        </a>
-      
     </div>
     <div id="post-list-paginator">
       <div id="post-list-paginator-inner">
@@ -309,17 +313,46 @@
 
 
   </main>  
-
   <footer id="footer">
     <div id="footer-container">
   &copy; 早川聖来中国応援クラブ
 </div>
   </footer>
+  <div id="search-dialog">
+  <div class="search-dialog-title" id="local-search-title">
+    検索
+  </div>
+  <span class="search-close-button">
+    <i class="fa fa-times" style="font-size: 2rem"></i>
+  </span>
+  <div id="local-input-panel">
+    <div id="local-search-input">
+      <div class="local-search-box">
+        <input id="local-search-box-input" placeholder="ブログを検索">
+      </div>
+    </div>
+  </div>
+  <div id="search-result-container">
+    <div id="search-result-list">
+    </div>
+  </div>
+</div>
 
+<div id="search-mask"></div>
   <div id="go-top-button-container">
   <button id="go-top-button-inner" type="button" aria-label="Page Top" style="display:none;">
     <span id="go-top-button-icon"></span>
   </button>
 </div>
+
+  
+<script src="/blog/js/util.js"></script>
+
+  
+<script src="/blog/js/scroll.js"></script>
+
+  
+<script src="/blog/js/search.js"></script>
+
 </body>
 </html>

@@ -40,9 +40,10 @@
 }
 
 a.navbar-site-icon {
-    font-size: 16px;
+    font-size: 1.8rem;
     margin: 0 6px;
     color: #9e3eb2;
+    cursor:pointer;
 }
 /* #navbar-site-name a {
     font-size: 12px;
@@ -57,8 +58,8 @@ a.navbar-site-icon {
     vertical-align: middle;
 } */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     a.navbar-site-icon {
-        font-size: 18px;
+        font-size: 2rem;
     }
 }

@@ -41,7 +41,7 @@
     transform: rotate(45deg);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     #go-top-button-container {
         right: 2.77778%;
         bottom: 35px;

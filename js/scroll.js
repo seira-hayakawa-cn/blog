@@ -1,21 +1,28 @@
 $(function() {
-  if ($('#go-top-button-container').is(':visible')) {
-    $('#go-top-button-inner').hide();
-  } else {
-    let currentTop = $(this).scrollTop();
-    if (currentTop > 56) {
-      $('#go-top-button-inner').fadeIn();
-    }
+  let currentTop = $(this).scrollTop();
+  if (currentTop > 60) {
+    $('#go-top-button-inner').fadeIn();
   }
-
+  let initTop = 0;
   $(window).on('scroll', throttle(function(event) {
     let currentTop = $(this).scrollTop();
     if ($(document).height() - currentTop - $(window).height() <= 100)  {
       $('#go-top-button-inner').fadeOut();
-    } else if (currentTop > 56) {
+    } else if (currentTop > 60) {
       $('#go-top-button-inner').fadeIn();
+      if (currentTop > initTop) {
+        if ($('#navbar').is(':visible')) {
+          $('#navbar').fadeOut();
+        }
+      } else {
+        if (!$('#navbar').is(':visible')) {
+          $('#navbar').fadeIn();
+        }
+      }
     } else {
-      $('#go-top-button-inner').fadeOut();
+      if (currentTop === 0) {
+        $('#navbar').fadeIn();
+      }
     }
     initTop = currentTop;
   }, 50, 100));
